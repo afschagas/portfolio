@@ -4,7 +4,7 @@ import { NavLogo } from 'components';
 export function Nav() {
   return (
     <nav className="fixed top-0 left-0 w-full py-6">
-      <div className="container mx-auto flex justify-between">
+      <div className="container mx-auto flex justify-evenly ">
         <NavLogo />
 
         <ul className="text-sm tracking-wide items-center flex gap-x-8">
@@ -15,9 +15,17 @@ export function Nav() {
 
         <ul className="text-sm tracking-wide items-center flex gap-x-8">
           <li className="hover:scale-125 duration-300 py-1 hover:text-teal-400">
-            <a className="cursor-pointer" href="/skills">Skills</a>
+            <a className="cursor-pointer" href="/skills">Habilidades</a>
           </li>
         </ul>
+
+        <ul className="text-sm tracking-wide items-center flex gap-x-8">
+          <li className="hover:scale-125 duration-300 py-1 hover:text-teal-400">
+            <a className="cursor-pointer" href="/contato">Contato</a>
+          </li>
+        </ul>
+
+
 
 
       </div>
