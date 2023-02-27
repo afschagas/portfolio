@@ -4,7 +4,7 @@ export function NavLogo() {
   return (
     <div>
 
-      <img className="h-8 animate-ping" src={Logo} alt="Logo" />
+      <img className="h-8 animate-none" src={Logo} alt="Logo" />
 
 
     </div>
