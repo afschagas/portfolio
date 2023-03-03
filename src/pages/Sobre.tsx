@@ -9,25 +9,30 @@ import IconGitHub from '../assets/image/icons-git.png';
 import IconTailwind from '../assets/image/icons-tailwind-css.png';
 import IconTypeScript from '../assets/image/icons-typescript.png';
 
-import { Button } from 'components';
+//import { Button } from 'components';
 
 import { InfoFooter } from 'components'
+
+import { ScrollToTop } from 'components';
+
 
 export function Sobre() {
   return (
     <>
       <Nav />
-      <section className="bg-[#232425] min-h-screen p-10">
 
-        <div className="space-y-8 md:space-y-0 md:grid md:grid-cols-2 py-[12%]">
+      <section id="sobre" className="bg-[#232425] min-h-screen p-10">
+        <div className="space-y-8 md:space-y-0 md:grid md:grid-cols-2 py-[10%]">
 
           <div className="flex flex-wrap justify-center">
+
             <div className="w-6/12 sm:w-4/12 px-4">
               <img src="https://github.com/afschagas.png" className="shadow rounded-full max-w-full h-auto align-middle border-none transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="Segurando uma caneca de café" />
             </div>
           </div>
 
           <div className="md:flex md:flex-col md:justify-center">
+            <ScrollToTop />
             <h1 className="text-white font-semibold text-2xl">
               Olá, Sou Alexandre Chagas!
             </h1>
@@ -78,20 +83,45 @@ export function Sobre() {
                 </i>
 
               </div>
-              <Button>
 
-              </Button>
             </div>
 
           </div>
 
         </div>
 
+      </section>
+
+      <section id="skills" className="bg-[#232425] min-h-screen p-10">
+        <h1 className="text-white font-semibold text-2xl">
+          SKILLS
+        </h1>
+
+        <ul className="pl-5 space-y-3 text-gray-600 list-disc marker:text-blue-600">
+          <li>Tailwind CSS list style with marker class 1</li>
+          <li>Tailwind CSS list style with marker class 2</li>
+          <li>Tailwind CSS list style with marker class 3</li>
+        </ul>
+
+      </section>
+
+      <section id="projetos" className="bg-[#232425] min-h-screen p-10">
+        <h1 className="text-white font-semibold text-2xl">
+          PROJETOS
+        </h1>
+      </section>
+
+      <section id="contact" className="bg-[#232425] min-h-screen p-10">
+        <h1 className="text-white font-semibold text-2xl justify-items-center">
+          CONTACT ME
+        </h1>
 
 
       </section>
 
       <InfoFooter />
+
+
     </>
   )
 }

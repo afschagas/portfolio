@@ -4,11 +4,15 @@ export function Skills() {
   return (
     <>
       <Nav />
-      <div className="container">
-        <h1>Escrever sobre meu Skills!</h1>
-      </div>
+
+      <section id="skills">skills</section>
+
 
 
     </>
   )
 }
+
+//<div className="container">
+//<h1>Escrever sobre meu Skills!</h1>
+//</div>
