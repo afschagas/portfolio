@@ -1,7 +1,9 @@
 import { NavLogo } from 'components';
+import { SocialMedia } from 'components';
 //import { Link } from 'react-router-dom';
 //import { Link } from 'react-router-dom';
 import { Link } from 'react-scroll';
+
 
 //import './styles.css';
 
@@ -31,8 +33,9 @@ export function Nav() {
             <Link activeClass="active" smooth spy to="contact">
               CONTACT ME
             </Link>
-          </li>
 
+          </li>
+          <SocialMedia />
         </ul>
 
       </div>

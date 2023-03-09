@@ -1,5 +1,8 @@
 import { Nav } from 'components';
 import { SocialMedia } from 'components';
+import { InfoFooter } from 'components'
+import { ScrollToTop } from 'components';
+import { TimeLine } from 'components';
 
 import IconHtml from '../assets/image/icons-html.png';
 import IconCss from '../assets/image/icons-css3.png';
@@ -11,27 +14,65 @@ import IconTypeScript from '../assets/image/icons-typescript.png';
 
 //import { Button } from 'components';
 
-import { InfoFooter } from 'components'
-
-import { ScrollToTop } from 'components';
-
-
 export function Sobre() {
   return (
     <>
       <Nav />
 
       <section id="sobre" className="bg-[#232425] min-h-screen p-10">
-        <div className="space-y-8 md:space-y-0 md:grid md:grid-cols-2 py-[10%]">
+        <div className="space-y-8 md:space-y-0 md:grid md:grid-cols-2 py-[6%]">
 
           <div className="flex flex-wrap justify-center">
-
-            <div className="w-6/12 sm:w-4/12 px-4">
+            <div className="w-6/12 sm:w-4/12">
+              <br />
+              <br />
+              <br />
+              <br />
               <img src="https://github.com/afschagas.png" className="shadow rounded-full max-w-full h-auto align-middle border-none transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="Segurando uma caneca de café" />
+              <br />
+              <hr className="text-gray-500" />
+              <h3 className="text-white font-semibold text-2xl">
+                Tech Stack
+              </h3>
+              <div className="container flex max-w-screen-lg mx-auto">
+                <div className="flex justify-center gap-2">
+                  <i className="" title="HTML">
+                    <img src={IconHtml} alt="Ícone da linguagem HTML" />
+                  </i>
+
+                  <i className="" title="CSS">
+                    <img src={IconCss} alt="Ícone da linguagem CSS" />
+                  </i>
+
+                  <i className="" title="JavaScript">
+                    <img src={IconJavaScript} alt="Ícone da linguagem JavaScript" />
+                  </i>
+
+                  <i className="" title="React">
+                    <img src={IconReact} alt="Ícone da linguagem React" />
+                  </i>
+
+                  <i className="" title="TypeScript">
+                    <img src={IconTypeScript} alt="Ícone da linguagem TypeScript" />
+                  </i>
+
+                  <i className="" title="GitHub">
+                    <img src={IconGitHub} alt="Ícone da linguagem GitHub" />
+                  </i>
+
+                  <i className="" title="TailWindCSS">
+                    <img src={IconTailwind} alt="Ícone da linguagem GitHub" />
+                  </i>
+
+                </div>
+              </div>
+
             </div>
+
           </div>
 
-          <div className="md:flex md:flex-col md:justify-center">
+
+          <div className="md:flex md:flex-col md:justify-center py-[-10%]">
             <ScrollToTop />
             <h1 className="text-white font-semibold text-2xl">
               Olá, Sou Alexandre Chagas!
@@ -40,52 +81,19 @@ export function Sobre() {
             <h2 className="text-gray-400 text-2xl md:text-4xl lg:text-6xl font-bold mb-4">
               Desenvolvedor Frontend
             </h2>
-            <p className="md:text-lg text-withe"> Auto didata entusiasmado e motivado em Tecnologia da Informação. Interessado em explorar sobre Desenvolvimento Web. Agora estou em busca de mais experiência na minha área.
+            <p className="md:text-lg text-withe">
+              Atualmente trabalho como Desenvolvedor Full Stack Jr, nas quais atuo com Javascript, React, Material UI e typescript.
+              <br />
+              <br />
+              Tive a oportunidade de transitar em algumas áreas da tecnologia, como analista de suporte, analista de implantação e analista de sistema. Experiências que me permitiram reafimar minha paixão pela área da Programação.
+              <br />
+              <br />
+              Busco sempre se aprimorar. Gosto de estudar novas tecnologias, atualmente estou estudando Clean Code, Nodejs, React, React-Native, Javascript e API, mais a fundo.
+              <br />
+              <br />
+              Objetivos definidos têm guiado minha vida para os resultados obtidos até aqui. Também aprecio vivenciar desafios, pois costumo enxergá-los como oportunidades de aprendizado e superação.
+
             </p>
-            <br />
-            <SocialMedia />
-            <br />
-            <hr className="text-gray-500" />
-            <br />
-            <h3 className="text-white font-semibold text-2xl">
-              Tech Stack
-            </h3>
-
-            <p></p>
-            <div className="container flex max-w-screen-lg mx-auto">
-              <div className="flex justify-center gap-2">
-                <i className="" title="HTML">
-                  <img src={IconHtml} alt="Ícone da linguagem HTML" />
-                </i>
-
-                <i className="" title="CSS">
-                  <img src={IconCss} alt="Ícone da linguagem CSS" />
-                </i>
-
-                <i className="" title="JavaScript">
-                  <img src={IconJavaScript} alt="Ícone da linguagem JavaScript" />
-                </i>
-
-                <i className="" title="React">
-                  <img src={IconReact} alt="Ícone da linguagem React" />
-                </i>
-
-                <i className="" title="TypeScript">
-                  <img src={IconTypeScript} alt="Ícone da linguagem TypeScript" />
-                </i>
-
-                <i className="" title="GitHub">
-                  <img src={IconGitHub} alt="Ícone da linguagem GitHub" />
-                </i>
-
-                <i className="" title="TailWindCSS">
-                  <img src={IconTailwind} alt="Ícone da linguagem GitHub" />
-                </i>
-
-              </div>
-
-            </div>
-
           </div>
 
         </div>
@@ -93,17 +101,10 @@ export function Sobre() {
       </section>
 
       <section id="skills" className="bg-[#232425] min-h-screen p-10">
-        <h1 className="text-white font-semibold text-2xl">
-          SKILLS
-        </h1>
-
-        <ul className="pl-5 space-y-3 text-gray-600 list-disc marker:text-blue-600">
-          <li>Tailwind CSS list style with marker class 1</li>
-          <li>Tailwind CSS list style with marker class 2</li>
-          <li>Tailwind CSS list style with marker class 3</li>
-        </ul>
-
+        <TimeLine />
       </section>
+
+
 
       <section id="projetos" className="bg-[#232425] min-h-screen p-10">
         <h1 className="text-white font-semibold text-2xl">
