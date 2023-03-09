@@ -1,4 +1,4 @@
-import Logo from '../../assets/image/ac-icon.png';
+import Logo from '../../assets/image/package.png';
 
 export function NavLogo() {
   return (
