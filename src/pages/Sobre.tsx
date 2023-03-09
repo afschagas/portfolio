@@ -78,7 +78,7 @@ export function Sobre() {
               Olá, Sou Alexandre Chagas!
             </h1>
             <br />
-            <h2 className="text-gray-400 text-2xl md:text-4xl lg:text-6xl font-bold mb-4">
+            <h2 className="text-gray-400 text-2xl md:text-4xl lg:text-4xl font-bold mb-2">
               Desenvolvedor Frontend
             </h2>
             <p className="md:text-lg text-withe">
@@ -99,6 +99,7 @@ export function Sobre() {
         </div>
 
       </section>
+
 
       <section id="skills" className="bg-[#232425] min-h-screen p-10">
         <TimeLine />
