@@ -1,8 +1,10 @@
 import { Nav } from 'components';
-import { SocialMedia } from 'components';
 import { InfoFooter } from 'components'
 import { ScrollToTop } from 'components';
 import { TimeLine } from 'components';
+
+import { FaMailBulk, FaPhoneAlt, FaSearchLocation } from 'react-icons/fa';
+import { IconContext } from 'react-icons';
 
 import IconHtml from '../assets/image/icons-html.png';
 import IconCss from '../assets/image/icons-css3.png';
@@ -12,7 +14,6 @@ import IconGitHub from '../assets/image/icons-git.png';
 import IconTailwind from '../assets/image/icons-tailwind-css.png';
 import IconTypeScript from '../assets/image/icons-typescript.png';
 
-//import { Button } from 'components';
 
 export function Sobre() {
   return (
@@ -101,10 +102,9 @@ export function Sobre() {
       </section>
 
 
-      <section id="skills" className="bg-[#232425] min-h-screen p-10">
+      <section id="skills" className="bg-[#232425] min-h-screen p-14">
         <TimeLine />
       </section>
-
 
 
       <section id="projetos" className="bg-[#232425] min-h-screen p-10">
@@ -114,10 +114,43 @@ export function Sobre() {
       </section>
 
       <section id="contact" className="bg-[#232425] min-h-screen p-10">
-        <h1 className="text-white font-semibold text-2xl justify-items-center">
-          CONTACT ME
-        </h1>
 
+        <div className="space-y-8 md:space-y-0 md:grid md:grid-cols-3 py-[19%]">
+          <div className="flex flex-wrap justify-center">
+            <div>
+              <IconContext.Provider value={{ color: "#9CA3AF", size: '2em' }}>
+                <div className="py-2 grid justify-items-center">
+                  <FaSearchLocation />
+                  <br />
+                  <h5 className="text-white font-semibold text-2xl">ONDE ME ENCONTRAR</h5>
+                  <p> Diadema - São Paulo</p>
+                </div>
+              </IconContext.Provider>
+            </div>
+          </div>
+
+          <div>
+            <IconContext.Provider value={{ color: "#9CA3AF", size: '2em' }}>
+              <div className="py-2 grid justify-items-center">
+                <FaMailBulk />
+                <br />
+                <h5 className="text-white font-semibold text-2xl">ENVIE-ME UM EMAIL PARA</h5>
+                <p>afschagas@gmail.com</p>
+              </div>
+            </IconContext.Provider>
+          </div>
+
+          <div>
+            <IconContext.Provider value={{ color: "#9CA3AF", size: '2em' }}>
+              <div className="py-2 grid justify-items-center">
+                <FaPhoneAlt />
+                <br />
+                <h5 className="text-white font-semibold text-2xl">TELEFONE</h5>
+                <p>(+55) 11 96909-5140</p>
+              </div>
+            </IconContext.Provider>
+          </div>
+        </div>
 
       </section>
 
@@ -127,6 +160,3 @@ export function Sobre() {
     </>
   )
 }
-
-
-// <figcaption className="mt-2 text-sm text-end text-gray-500 dark:text-gray-400">Sem café, eu não vivo...</figcaption>
