@@ -10,10 +10,10 @@ import { Link } from 'react-scroll';
 export function Nav() {
   return (
 
-    <nav className="fixed top-0 left-0 w-full py-6">
+    <nav className="fixed top-0 left-0 w-full py-5">
       <div className="container mx-auto flex justify-evenly ">
         <NavLogo />
-        <ul className="text-sm tracking-wide items-center flex gap-x-8">
+        <ul className="text-sm tracking-wide items-center flex gap-x-4">
           <li className="hover:scale-125 duration-300 py-1 hover:text-teal-400">
             <Link activeClass="active" smooth spy to="sobre">
               SOBRE
@@ -31,7 +31,7 @@ export function Nav() {
           </li>
           <li className="hover:scale-125 duration-300 py-1 hover:text-teal-400">
             <Link activeClass="active" smooth spy to="contact">
-              CONTACT ME
+              CONTATO
             </Link>
 
           </li>
