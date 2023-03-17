@@ -17,6 +17,7 @@ import IconTypeScript from '../assets/image/icons-typescript.png';
 import NlwEsports from '../assets/image/projetos/nlwEsports.png';
 import PetShop from '../assets/image/projetos/petShop.png';
 import ProductCard from '../assets/image/projetos/productCard.png'
+import LoginPage from '../assets/image/projetos/loginPage.png';
 
 
 export function Sobre() {
@@ -115,8 +116,9 @@ export function Sobre() {
         <div className="p-16 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
 
           <div className="max-w-sm bg-[#232425] border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
             <a href="https://afschagas.github.io/nlwSports/">
-              <img className="rounded-t-lg" src={NlwEsports} alt="" />
+              <img className="rounded-t-lg object-cover h-48 w-96" src={NlwEsports} alt="" />
             </a>
             <div className="p-5">
               <a href="https://afschagas.github.io/nlwSports/">
@@ -132,7 +134,7 @@ export function Sobre() {
 
           <div className="max-w-sm bg-[#232425] border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="https://afschagas.github.io/petshop/">
-              <img className="rounded-t-lg" src={PetShop} alt="" />
+              <img className="rounded-t-lg object-cover h-48 w-96" src={PetShop} alt="" />
             </a>
             <div className="p-5">
               <a href="https://afschagas.github.io/petshop/">
@@ -148,7 +150,7 @@ export function Sobre() {
 
           <div className="max-w-sm bg-[#232425] border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="https://afschagas.github.io/boraCodar/02/index">
-              <img className="rounded-t-lg" src={ProductCard} alt="" />
+              <img className="rounded-t-lg object-cover h-48 w-96" src={ProductCard} alt="" />
             </a>
             <br />
             <div className="p-5">
@@ -157,6 +159,23 @@ export function Sobre() {
               </a>
               <p className="mb-3 font-normal text-white dark:text-gray-400">Nesse projeto utilizamos: HTML | CSS | JavaScript | GIT</p>
               <a href="https://afschagas.github.io/boraCodar/02/index" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Consulte
+                <svg aria-hidden="true" className="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <div className="max-w-sm bg-[#232425] border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="https://afschagas.github.io/loginPage/">
+              <img className="rounded-t-lg object-cover h-48 w-96" src={LoginPage} alt="" />
+            </a>
+            <br />
+            <div className="p-5">
+              <a href="https://afschagas.github.io/loginPage/">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">Projeto desenvolvido em um treinamento on-line FullStack</h5>
+              </a>
+              <p className="mb-3 font-normal text-white dark:text-gray-400">Nesse projeto utilizamos: HTML | CSS | GIT</p>
+              <a href="https://afschagas.github.io/loginPage/" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Consulte
                 <svg aria-hidden="true" className="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
               </a>
