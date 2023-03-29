@@ -2,7 +2,7 @@ let timelineElements = [
   {
     id: 1,
     title: "Desenvolvedor Full Stack Jr",
-    location: "Trait Systems",
+    location: "Triad Systems",
     description:
       "Construindo interfaces baseada em componentes, páginas com layout pŕe-defino pelo UX designer. Fazendo uma ponte entre o Backend e o UX/UI.",
     //buttonText: "View Frontend Projects",
