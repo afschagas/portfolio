@@ -6,7 +6,7 @@ let timelineElements = [
     description:
       "Construindo interfaces baseada em componentes, páginas com layout pŕe-defino pelo UX designer. Fazendo uma ponte entre o Backend e o UX/UI.",
     //buttonText: "View Frontend Projects",
-    date: "Janeiro 2021 - Atualmente",
+    date: "Março 2023",
     icon: "work",
   },
   {

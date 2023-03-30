@@ -91,8 +91,8 @@ export function Sobre() {
               Desenvolvedor Frontend
             </h2>
             <p className="md:text-lg text-withe">
-              Atualmente trabalho como Desenvolvedor Full Stack Jr, nas quais
-              atuo com Javascript, React, Material UI e typescript.
+              Meu foco é no Front-end, nas quais atuo com HTML, CSS, Javascript,
+              React, Material UI, Bootstrap, Tailwindcss, Typescript e Nodejs.
               <br />
               <br />
               Tive a oportunidade de transitar em algumas áreas da tecnologia,
